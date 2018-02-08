@@ -73,7 +73,7 @@
 
 
   <!-- reseaux sociaux -->
-  <section>
+  <section class="h_sociaux">
     <h2>La Tim sur les réseaux sociaux</h2>
 
 
