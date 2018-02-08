@@ -273,6 +273,14 @@ mark, ins {
 big {
   font-size: 125%; }
 
+@font-face {
+  font-family: "Roboto";
+  src: url(wp-content/themes/timcsf2/fonts/Roboto-Regular.ttf);
+  font-weight: normal; }
+
+* {
+  font-family: "Roboto", "sans-serif"; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/

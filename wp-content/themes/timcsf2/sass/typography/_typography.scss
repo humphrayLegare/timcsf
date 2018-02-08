@@ -13,3 +13,16 @@ textarea {
 @import "headings";
 
 @import "copy";
+
+
+@font-face {
+	  font-family: "Roboto";  
+	  // src: url(public_html/your-site/wp-content/themes/your-theme/fonts/FontName-Regular.ttf);
+    src: url(wp-content/themes/timcsf2/fonts/Roboto-Regular.ttf);  
+	  font-weight: normal;  
+}
+
+
+* {
+    font-family: "Roboto", "sans-serif";
+}

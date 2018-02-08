@@ -56,22 +56,43 @@
 
   </section>
 
+  <!-- temoignages -->
   <section class="h_temoignages">
 
     <h2>Témoignages</h2>
 
   </section>
 
+  <!-- technique -->
+  <section class="h_technique">
+    <h2>Sinscrire au programme</h2>
+    <p></p>
+    <a href="#">Je m'inscris</a>
+
+  </section>
 
 
+  <!-- reseaux sociaux -->
+  <section>
+    <h2>La Tim sur les réseaux sociaux</h2>
 
 
+  </section>
+
+  <!-- contact -->
+  <section class="h_contact">
+    <div class="h_contact_form">
+      FORM !
+    </div>
+
+    <div class="h_contact_map">
+      MAP !
+    </div>
+
+
+  </section>
 
 </main>
-
-
-
-
 
 
 

@@ -23,7 +23,7 @@ get_header(); ?>
           <img alt="broken" src="wp-content/uploads/2018/02/prj549_01.jpg"/>
           <h3>Intégration</h3>
           <p>
-            blabla
+            b
           </p>
           <button type="button">Projets</button>
         </div>
