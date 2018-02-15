@@ -156,3 +156,22 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// Autre code déjà en place 
+	
+
+// Changement de l'adresse de la feuille de style
+add_filter('stylesheet_directory_uri','gkp_stylesheet_directory_uri', 10, 2);
+function gkp_stylesheet_directory_uri($stylesheet_dir_uri, $stylesheet) {
+
+    // On ajoute le nom du dossier
+    return $stylesheet_dir_uri.'/sass';
+
+}
+  
+// Changement du nom de la feuille de style
+add_filter('stylesheet_uri', 'gkp_stylesheet_uri', 10, 2);
+function gkp_stylesheet_uri($stylesheet_uri, $stylesheet_dir_uri) {
+
+    // On change le nom du fichier
+    return $stylesheet_dir_uri.'/style.css';
+}

@@ -1,0 +1,17 @@
+{
+  "name": "timcsf2",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "authors": [
+    "humphray legare <humphray.legare@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/humphrayLegare/timcsf",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

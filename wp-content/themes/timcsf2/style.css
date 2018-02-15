@@ -190,6 +190,25 @@ body, button, input, select, optgroup, textarea {
 }
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  text-align: center;
+}
+h1:nth-child(1) {
+  text-align: left;
+}
+h1 {
+  font-size: 46px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+section:nth-child(even) h1, section:nth-child(even) h2, section:nth-child(even) h3 {
+  color: #604a8e;
+}
+section:nth-child(odd) h1, section:nth-child(odd) h2, section:nth-child(odd) h3 {
+  color: #efeeee;
 }
 p {
   margin-bottom: 1.5em;
@@ -619,7 +638,3 @@ embed, iframe, object {
 /*--------------------------------------------------------------
  # h
  --------------------------------------------------------------*/
-/* my main file for my personnal scss */
-.h_creations, .h_perspectives, .h_technique, .h_contact {
-  background-color: #604a8e;
-}

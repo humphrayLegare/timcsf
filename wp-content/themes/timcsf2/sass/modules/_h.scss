@@ -1,6 +1,161 @@
-/* my main file for my personnal scss */
+// /* my main file for my personnal scss */
+
+@import "../../bower_components/susy/sass/susy";
+@import "../../bower_components/susy/sass/plugins/svg-grid";
+
+// // 4 symmetrical, fluid columns
+// // gutters are 1/4 the size of a column
+// // elements span 1 less gutter than columns
+// // containers span 1 less gutter as well
+
+$susy: (
+    'columns': susy-repeat(12),
+    'gutters': 0.25,
+    'spread': 'narrow',
+    'container-spread': 'narrow',
+);
+
+
+
+
+.grid {
+    background: susy-svg-grid() no-repeat scroll;
+}
+
+//header section
+header {
+    width:1200px;
+    background: white;
+    margin:auto;
+
+    .logoCegep {
+        display:inline-block;
+        float:right;
+        position:relative;
+        bottom:-30px;
+        width:span(2 of 12 last)
+    }
+
+}
+
+
+//main
+h1 {
+    display:inline-block;
+    float:left;
+    text-transform:uppercase;
+
+}
+
+h1, h2, h3 {
+    padding-top:50px;
+    padding-bottom:50px;
+    margin-top:0;
+   
+}
+
+.fix-title-branding {
+    display:inline-block !important;
+    float:left !important;
+    width:span(6 of 12);
+    p {
+        position:relative;
+        bottom:-60px;
+        left:30px;
+        
+    }
+}
+
+//creations section
+.h_creations_projet {
+    display:inline-block;
+    width: span(4 of 12);
+
+    img, h3, button{
+        display:block;
+        margin:auto;
+        text-align:center;
+    }
+
+    p {
+        color: $h_color_text--white;
+    }
+
+}
+
+
+//section immersion
+.h_immersion__etudiant {
+    display:inline-block;
+    width:span(6 of 12);
+    margin:auto;
+
+    img {
+        display:block;
+        margin:auto;
+    }
+}
+
+
+//section perspectives
+
+.h_perspectives {
+
+    p{
+        margin:auto;
+        width:span(6 of 12);
+        margin-bottom:30px;
+        color:$h_color_text--white;
+        
+    }
+}
+
+
+.h_perspectives__placements {
+    display:inline-block;
+    width: span(4 of 12);
+
+
+    h3, i, span {
+        display:block;
+        margin:auto;
+        color:$h_color_text--white;
+        text-align:center;
+    }
+}
+
+
+
+
+.h_main {
+    width:1200px;
+    display:block;
+    margin:auto;
+}
+
 
 .h_creations, .h_perspectives, .h_technique, .h_contact  {
     background-color: $h_color_main;
 
 }
+
+
+img {
+
+    width:200px;
+}
+
+.h_technique__a {
+    padding:15px;
+    width:200px;
+    background:yellow;
+    text-decoration:none;
+    border-radius:20px;
+    text-align:center;
+    display:block;
+    margin:auto;
+
+}
+
+
+

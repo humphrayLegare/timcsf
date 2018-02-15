@@ -24,6 +24,7 @@
 			}
 
 			li {
+        
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -50,9 +51,10 @@
 	}
 
 	li {
-		float: left;
+		  float: left;
+      margin-right:30px;
 		position: relative;
-
+    text-transform:uppercase;
 		&:hover > a,
 		&.focus > a {
 		}
