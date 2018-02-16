@@ -62,11 +62,15 @@ h1, h2, h3 {
         position:relative;
         bottom:-60px;
         left:30px;
-        
     }
 }
 
 //creations section
+.h_creations, .h_immersion, .h_perspectives, .h_temoignages, .h_technique {
+    padding:40px;
+}
+
+
 .h_creations_projet {
     display:inline-block;
     width: span(4 of 12);
@@ -148,14 +152,142 @@ img {
 .h_technique__a {
     padding:15px;
     width:200px;
-    background:yellow;
+    background:$h_color_button;
+    color: $h_color_text--white;
     text-decoration:none;
     border-radius:20px;
     text-align:center;
     display:block;
     margin:auto;
+    font-weight:bold;
 
 }
 
+
+button {
+    padding:20px;
+    color:white;
+    background:#A890E1;
+    border-radius: 20px;
+    border:0;
+    font-weight:bold;
+    
+}
+
+
+//sidebar
+
+.rss-widget-icon, .widget-title {
+    display:none;
+}
+
+#rss-2 ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    li {
+        display:inline-block;
+        width: span(4 of 12);
+        vertical-align:text-top;
+        max-width: span(4 of 12);
+        
+
+        a{
+            ;
+            display:block;
+            color:$h_color_text--white;
+            text-decoration:none;
+            font-size:18px;
+        }
+        span{
+            margin-top:10px;
+            margin-bottom:10px;
+            display:block;
+            color:$h_color_text--white;
+        }
+        div{
+            max-width:90%;
+            display:block;
+            color:$h_color_text--white;
+        }
+
+
+
+    }
+}
+
+
+//sociaux
+
+
+
+.h_facebook__top div:nth-child(odd), .h_twitter__top div:nth-child(odd){
+    display:inline-block;
+    width:span(5 of 12);
+    text-align:center;
+    margin:auto
+
+               hr{
+        display:block;
+        margin:auto;
+        vertical-align:middle;
+    }
+
+    hr {
+        height: 4px;
+        border: 0;
+        vertical-align:middle;
+        margin-bottom:0;
+        border-radius:3px;
+    }
+
+    
+}
+
+
+.h_facebook__top div:nth-child(even), .h_twitter__top div:nth-child(even){
+    display:inline-block;
+    width:span(2 of 12);
+    text-align:center;
+    margin:auto
+
+               hr {
+        display:block;
+        margin:auto;
+        vertical-align:middle;
+    }
+
+    hr {
+        height: 4px;
+        border: 0;
+        vertical-align:middle;
+        margin-bottom:0;
+        border-radius:3px;
+    }
+
+    .sociaux_span--facebook {
+        color:#3b5998;
+    }
+
+    .sociaux_span--twitter{
+        color:#00aced;
+    }
+
+
+
+}
+
+
+
+.sociaux_logo {
+    width: span(1 of 4);
+    vertical-align:middle;
+}
+
+.sociaux_span {
+    width: span(3 of 4);
+    vertical-align:middle;
+}
 
 

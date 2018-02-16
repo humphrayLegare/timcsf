@@ -436,11 +436,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: black; }
   a:visited {
-    color: purple; }
+    color: grey; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: grey; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -453,7 +453,8 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -755,6 +756,9 @@ h1, h2, h3 {
     bottom: -60px;
     left: 30px; }
 
+.h_creations, .h_immersion, .h_perspectives, .h_temoignages, .h_technique {
+  padding: 40px; }
+
 .h_creations_projet {
   display: inline-block;
   width: 32.2033898305%; }
@@ -802,11 +806,94 @@ img {
 .h_technique__a {
   padding: 15px;
   width: 200px;
-  background: yellow;
+  background: #A890E1;
+  color: #efeeee;
   text-decoration: none;
   border-radius: 20px;
   text-align: center;
   display: block;
-  margin: auto; }
+  margin: auto;
+  font-weight: bold; }
+
+button {
+  padding: 20px;
+  color: white;
+  background: #A890E1;
+  border-radius: 20px;
+  border: 0;
+  font-weight: bold; }
+
+.rss-widget-icon, .widget-title {
+  display: none; }
+
+#rss-2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  #rss-2 ul li {
+    display: inline-block;
+    width: 32.2033898305%;
+    vertical-align: text-top;
+    max-width: 32.2033898305%; }
+    #rss-2 ul li a {
+      display: block;
+      color: #efeeee;
+      text-decoration: none;
+      font-size: 18px; }
+    #rss-2 ul li span {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: block;
+      color: #efeeee; }
+    #rss-2 ul li div {
+      max-width: 90%;
+      display: block;
+      color: #efeeee; }
+
+.h_facebook__top div:nth-child(odd), .h_twitter__top div:nth-child(odd) {
+  display: inline-block;
+  width: 40.6779661017%;
+  text-align: center; }
+  .h_facebook__top div:nth-child(odd) margin:auto
+  hr, .h_twitter__top div:nth-child(odd) margin:auto
+  hr {
+    display: block;
+    margin: auto;
+    vertical-align: middle; }
+  .h_facebook__top div:nth-child(odd) hr, .h_twitter__top div:nth-child(odd) hr {
+    height: 4px;
+    border: 0;
+    vertical-align: middle;
+    margin-bottom: 0;
+    border-radius: 3px; }
+
+.h_facebook__top div:nth-child(even), .h_twitter__top div:nth-child(even) {
+  display: inline-block;
+  width: 15.2542372881%;
+  text-align: center; }
+  .h_facebook__top div:nth-child(even) margin:auto
+  hr, .h_twitter__top div:nth-child(even) margin:auto
+  hr {
+    display: block;
+    margin: auto;
+    vertical-align: middle; }
+  .h_facebook__top div:nth-child(even) hr, .h_twitter__top div:nth-child(even) hr {
+    height: 4px;
+    border: 0;
+    vertical-align: middle;
+    margin-bottom: 0;
+    border-radius: 3px; }
+  .h_facebook__top div:nth-child(even) .sociaux_span--facebook, .h_twitter__top div:nth-child(even) .sociaux_span--facebook {
+    color: #3b5998; }
+  .h_facebook__top div:nth-child(even) .sociaux_span--twitter, .h_twitter__top div:nth-child(even) .sociaux_span--twitter {
+    color: #00aced; }
+
+.sociaux_logo {
+  width: 21.0526315789%;
+  vertical-align: middle; }
+
+.sociaux_span {
+  width: 73.6842105263%;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */

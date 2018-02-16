@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main class="h_main grid">
+<?php if( !function_exists('get_field'))  return; ?>
 
   <!-- creations -->
   <section class="h_creations">
@@ -8,11 +9,10 @@
     <div class="h_creations_projet">
       <img alt="librairie traces" src="wp-content/uploads/2018/02/prj549_01.jpg"/>
       <h3>Intégration</h3>
-      <p>
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  
-
-
-      </p>
+      
+      
+      <p><?php the_field('integration_p'); ?></p>
+      
       <button type="button">Projets</button>
     </div>
 
@@ -33,7 +33,7 @@ Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci comm
       <h3>Vidéos</h3>
       <p>
 Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  
-
+    
 
       </p>
       <button type="button">Projets</button>
@@ -99,9 +99,15 @@ varius mi purus non odio. Pell
 
     
       <div class="h_perspectives__emplois">
-        <h3>JOB TITLE</h3>
-        
-        <p>JOB TEXTE</p>
+        <!-- <h3>JOB TITLE</h3> -->
+
+
+        <?php get_sidebar('sidebar-1'); ?>
+
+
+
+
+        <!-- <p>JOB TEXTE</p> -->
       </div>
    
 
@@ -136,6 +142,41 @@ varius mi purus non odio. Pell
   <!-- reseaux sociaux -->
   <section class="h_sociaux">
     <h2>La Tim sur les réseaux sociaux</h2>
+    
+    <div class="h_facebook__top">
+      <div>
+        <hr/>
+      </div>
+      <div>
+        <img class="sociaux_logo" src="wp-content/uploads/2018/02/facebook.png" alt="facebook logo" />
+        <span class="sociaux_span--facebook">Facebook</span>
+      </div>
+      <div>
+        <hr/>
+      </div>
+    </div>
+    <div class="h_facebook__down">
+      
+    </div>
+
+
+    <div class="h_twitter__top">
+      <div>
+        <hr/>
+      </div>
+      <div>
+        <img class="sociaux_logo" src="wp-content/uploads/2018/02/twitter.png" alt="twitter logo" />
+        <span class="sociaux_span--twitter">Twitter</span>
+      </div>
+      <div>
+        <hr/>
+      </div>
+    </div>
+    <div class="h_twitter__down">
+      
+    </div>
+
+    
 
 
   </section>
