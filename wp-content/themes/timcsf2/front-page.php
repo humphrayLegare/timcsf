@@ -21,9 +21,7 @@
       <img alt="librairie traces" src="wp-content/uploads/2018/02/prj549_01.jpg"/>
       <h3>Programmation</h3>
       <p>
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  
-
-
+    <?php the_field('programmation_p'); ?>
       </p>
       <button type="button">Projets</button>
     </div>
@@ -51,17 +49,19 @@ Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci comm
   <section class="h_immersion">
     <h2>Étudiants d'un jour et stages</h2>
     <div class="h_immersion__etudiant">
-      <img alt="benoit frigon" src="#"/>
+      <img alt="benoit frigon" src="<?php the_field('etudiant_img'); ?>"/>
       <h3>Étudiant d'un jour</h3>
-      <p>In id erat non orci commodo lobortis. In id erat non orci commodo lobortis
-      In id erat non orci commodo lobortis.</p>
+      <p>
+<?php the_field('etudiant_p'); ?>
+      </p>
       <span>Pour des renseignements <a href="mailto:ben@tim.ca">Benoit Frigon</a></span>
     </div>
     <div class="h_immersion__etudiant">
-      <img alt="audrey morneau" src="aaaa"/>
+      <img alt="audrey morneau" src="<?php the_field('stage_img'); ?>"/>
       <h3>Stages</h3>
-      <p>In id erat non orci commodo lobortis. In id erat non orci commodo lobortis
-      In id erat non orci commodo lobortis.</p>
+      <p>
+<?php the_field('stage_p'); ?>
+      </p>
       <span>Pour des renseignements <a href="mailto:audrey@tim.ca">Audrey morneau</a></span>
     </div>
   </section>
@@ -70,28 +70,24 @@ Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci comm
   <section class="h_perspectives">
     <h2>Perspectives</h2>
     <p>
-Nullam eu ante vel est convallis dignissim. Fusce suscipit, wisi nec facilisis
-facilisis, est dui fermentum leo, quis tempor ligula erat quis odio. Nunc porta
-vulputate tellus. Nunc rutrum turpis sed pede. Sed bibendum. Aliquam posuere.
-Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis
-varius mi purus non odio. Pell
+<?php the_field('perspectives_p'); ?>
 
     </p>
     
     <div class="h_perspectives__placements">
       <h3>Taux de placements</h3>
       <i></i>
-      <span>94%</span>
+      <span><?php the_field('taux_placement'); ?></span>
     </div>
     <div class="h_perspectives__placements">
       <h3>Salaire</h3>
       <i></i>
-      <span>20.00$</span>
+      <span><?php the_field('initial_moyen'); ?></span>
     </div>
     <div class="h_perspectives__placements">
       <h3>Salaire haut</h3>
       <i></i>
-      <span>25.00$</span>
+      <span><?php the_field('initial_superieur'); ?></span>
     </div>
     
 
@@ -102,7 +98,8 @@ varius mi purus non odio. Pell
         <!-- <h3>JOB TITLE</h3> -->
 
 
-        <?php get_sidebar('sidebar-1'); ?>
+        <?php get_sidebar('sidebar-1' ); ?>
+        <!-- <?php dynamic_sidebar('twitter'); ?> -->
 
 
 
@@ -119,14 +116,20 @@ varius mi purus non odio. Pell
   <section class="h_temoignages">
 
     <h2>Témoignages</h2>
+
     <div class="h_immersion__etudiant">
-      <img alt="benoit frigon" src="#"/>
-      <h3>Étudiant d'un jour</h3>
-      <p>In id erat non orci commodo lobortis. In id erat non orci commodo lobortis
-      In id erat non orci commodo lobortis.</p>
-      <span>Pour des renseignements <a href="mailto:ben@tim.ca">Benoit Frigon</a></span>
+      <img alt="temoignage" src="<?php the_field('temoignage_1_img'); ?>"/>
+      <h3><?php the_field('temoignage_1_job'); ?></h3>
+      <p><?php the_field('temoignage_1_description'); ?></p>
     </div>
-    
+
+<div class="h_immersion__etudiant">
+      <img alt="temoignage" src="<?php the_field('temoignage_2_img'); ?>"/>
+      <h3><?php the_field('temoignage_2_job'); ?></h3>
+      <p><?php the_field('temoignage_2_description'); ?></p>
+    </div>
+
+  
 
   </section>
 
@@ -143,21 +146,7 @@ varius mi purus non odio. Pell
   <section class="h_sociaux">
     <h2>La Tim sur les réseaux sociaux</h2>
     
-    <div class="h_facebook__top">
-      <div>
-        <hr/>
-      </div>
-      <div>
-        <img class="sociaux_logo" src="wp-content/uploads/2018/02/facebook.png" alt="facebook logo" />
-        <span class="sociaux_span--facebook">Facebook</span>
-      </div>
-      <div>
-        <hr/>
-      </div>
-    </div>
-    <div class="h_facebook__down">
-      
-    </div>
+    
 
 
     <div class="h_twitter__top">
@@ -173,7 +162,10 @@ varius mi purus non odio. Pell
       </div>
     </div>
     <div class="h_twitter__down">
+      <!-- tweet here -->
       
+      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-2') ) : ?>
+<?php endif; ?>
     </div>
 
     
@@ -184,11 +176,37 @@ varius mi purus non odio. Pell
   <!-- contact -->
   <section class="h_contact">
     <div class="h_contact_form">
-      FORM !
+
+      <label for="nom"><?php the_field('nom'); ?></label>
+      <input id="nom" name="nom" type="text" value=""/>
+
+      <label for="email"><?php the_field('email'); ?></label>
+      <input id="email" name="email" type="text" value=""/>
+
+      <label for="destinataire"><?php the_field('destinataire'); ?></label>
+      <select id="destinataire" name="destinataire">
+        <option value="">Sylvain Lamoureux</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+
+      <label for="sujet"><?php the_field('sujet'); ?></label>
+      <input id="sujet" name="sujet" type="text" value="">
+
+      <label for="message"><?php the_field('message'); ?></label>
+      <textarea id="message" name="message" value="" rows="10" cols="10"></textarea>
+
+
     </div>
 
     <div class="h_contact_map">
-      MAP !
+
+      <address>
+        
+      </address>
+      <p><?php the_field('info'); ?></p>
+      
     </div>
 
 
