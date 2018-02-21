@@ -44,7 +44,6 @@ h1 {
     display:inline-block;
     float:left;
     text-transform:uppercase;
-
 }
 
 h1, h2, h3 {
@@ -74,6 +73,9 @@ h1, h2, h3 {
 .h_creations_projet {
     display:inline-block;
     width: span(4 of 12);
+    vertical-align:top;
+
+    background:red;
 
     img, h3, button{
         display:block;
@@ -85,6 +87,7 @@ h1, h2, h3 {
         color: $h_color_text--white;
     }
 
+
 }
 
 
@@ -93,10 +96,13 @@ h1, h2, h3 {
     display:inline-block;
     width:span(6 of 12);
     margin:auto;
+    vertical-align: top;
 
     img {
         display:block;
         margin:auto;
+        width:200px;
+        height:200px;
     }
 }
 
@@ -149,8 +155,31 @@ img {
     width:200px;
 }
 
+.h_technique {
+    display:block;
+    margin:auto;
+    padding-top:200px;
+    padding-bottom:200px;
+
+
+    vertical-align:middle;
+    h2 {
+        display:block;
+        margin:auto;
+    }
+
+    div {
+        display:block;
+        margin:auto;
+
+        vertical-align:middle;
+
+    }
+}
+
 .h_technique__a {
     padding:15px;
+
     width:200px;
     background:$h_color_button;
     color: $h_color_text--white;
@@ -171,7 +200,6 @@ button {
     border-radius: 20px;
     border:0;
     font-weight:bold;
-    
 }
 
 
@@ -221,6 +249,8 @@ button {
     list-style:none;
     margin:0;
     padding:0;
+    margin-top:50px;
+    margin-bottom:50px;
 
     li {
         display:inline-block;
@@ -262,7 +292,7 @@ button {
     display:inline-block;
     width:span(5 of 12);
     text-align:center;
-    margin:auto
+    margin:auto;
 
                hr{
         display:block;
@@ -329,7 +359,10 @@ button {
 
 
 
-.h_contact {
+.h_contact, .h_contact_map {
+    color:$h_color_text--white;
+
+
     label, input {
         display:block;
         color:$h_color_text--white;
@@ -337,13 +370,37 @@ button {
     
 }
 
-.h_contact_form {
+.h_contact_form, .h_contact_map {
+
     display:inline-block;
     width:span(6 of 12);
-
+    vertical-align: top;
+    padding-top:50px;
+    margin-top:50px;
+    padding-top:50px;
+    margin-bottom:50px;
     label, input, textarea, select {
         display:block;
         width: span(4 of 6);
         margin:auto;
     }
+}
+
+.h_contact_map {
+    h3 {
+        padding:0;
+        margin:0;
+        text-align:left;
+
+    }
+
+}
+
+//footer
+footer {
+    display:block;
+    margin:auto;
+    text-align: center;
+    font-size: 18px;
+    padding:50px;
 }

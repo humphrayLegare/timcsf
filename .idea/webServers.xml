@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bcaf9037-ca99-4314-bc80-4f2635bf5a1d" name="timunix2" url="http://timunix2.cegep-ste-foy.qc.ca">
+        <fileTransfer host="timunix2.cegep-ste-foy.qc.ca" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

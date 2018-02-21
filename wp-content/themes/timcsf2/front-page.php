@@ -4,7 +4,8 @@
 <?php if( !function_exists('get_field'))  return; ?>
 
   <!-- creations -->
-  <section class="h_creations">
+
+  <section id="h_creations" class="h_creations">
     <h2>Ce que nous créons</h2>
     <div class="h_creations_projet">
       <img alt="librairie traces" src="wp-content/uploads/2018/02/prj549_01.jpg"/>
@@ -45,7 +46,7 @@
   </section>
 
   <!-- immersion -->
-  <section class="h_immersion">
+  <section id="h_immersion" class="h_immersion">
     <h2>Étudiants d'un jour et stages</h2>
     <div class="h_immersion__etudiant">
       <img alt="benoit frigon" src="<?php the_field('etudiant_img'); ?>"/>
@@ -66,7 +67,7 @@
   </section>
 
   <!-- perspectives -->
-  <section class="h_perspectives">
+  <section id="h_perspectives" class="h_perspectives">
     <h2>Perspectives</h2>
     <p>
 <?php the_field('perspectives_p'); ?>
@@ -112,7 +113,7 @@
   </section>
 
   <!-- temoignages -->
-  <section class="h_temoignages">
+  <section id="h_temoignages" class="h_temoignages">
 
     <h2>Témoignages</h2>
 
@@ -134,15 +135,16 @@
 
   <!-- technique -->
   <section class="h_technique">
-    <h2>Sinscrire au programme</h2>
-    <p></p>
-    <a class="h_technique__a" href="#">Je m'inscris</a>
+      <div>
+        <h2>Sinscrire au programme</h2>
 
+        <a class="h_technique__a" href="#">Je m'inscris</a>
+      </div>
   </section>
 
 
   <!-- reseaux sociaux -->
-  <section class="h_sociaux">
+  <section id="h_sociaux" class="h_sociaux">
     <h2>La Tim sur les réseaux sociaux</h2>
     
     
@@ -173,7 +175,7 @@
   </section>
 
   <!-- contact -->
-  <section class="h_contact">
+  <section id="h_contact" class="h_contact">
     <div class="h_contact_form">
 
       <label for="nom"><?php the_field('nom'); ?></label>
@@ -201,15 +203,21 @@
 
     <div class="h_contact_map">
 
+        <h3>Notre adresse</h3>
       <address>
-        
+          2410 chemin Sainte-Foy,
+          Québec
+          G1V 1T3
       </address>
+        <img src="<?php the_field('info_img'); ?>" alt="sylvain lamoureux">
       <p><?php the_field('info'); ?></p>
       
     </div>
 
 
   </section>
+
+    <footer> tous droits reserves</footer>
 
 </main>
 
