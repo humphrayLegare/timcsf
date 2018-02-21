@@ -30,8 +30,7 @@
       <img alt="librairie traces" src="wp-content/uploads/2018/02/prj549_01.jpg"/>
       <h3>Vidéos</h3>
       <p>
-Aliquam erat volutpat.  Nunc eleifend leo vitae magna.  In id erat non orci commodo lobortis.  Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.  
-    
+<?php the_field('videos_p'); ?>
 
       </p>
       <button type="button">Projets</button>

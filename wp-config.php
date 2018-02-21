@@ -37,6 +37,45 @@ define('DB_CHARSET', 'utf8mb4');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+
+//for timunix2
+// define('DB_NAME', '2015_hlegareBD');
+
+// /** MySQL database username */
+// define('DB_USER', 'hlegare_user');
+
+// /** MySQL database password */
+// define('DB_PASSWORD', 'hlegare_mdp');
+
+// /** MySQL hostname */
+// define('DB_HOST', 'localhost');
+
+// /** Database Charset to use in creating database tables. */
+// define('DB_CHARSET', 'utf8mb4');
+
+// /** The Database Collate type. Don't change this if in doubt. */
+// define('DB_COLLATE', '');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
