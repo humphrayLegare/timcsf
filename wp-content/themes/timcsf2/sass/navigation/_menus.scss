@@ -1,10 +1,11 @@
 .main-navigation {
 	clear: both;
 	display: block;
-	width: 1024px;
+	width: 1200px;
   margin:auto;
-  position:relative;
-  top:-40px;
+  // position:relative;
+  // left:0;
+  margin-bottom:40px;
 
 	ul {
 		display: none;

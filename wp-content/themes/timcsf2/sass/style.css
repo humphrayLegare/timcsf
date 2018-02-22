@@ -245,7 +245,7 @@ h2 {
   font-size: 32px; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 20px; }
 
 section:nth-child(even) h1, section:nth-child(even) h2, section:nth-child(even) h3 {
   color: #604a8e; }
@@ -436,7 +436,8 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: black; }
+  color: black;
+  font-size: 24px; }
   a:visited {
     color: grey; }
   a:hover, a:focus, a:active {
@@ -452,10 +453,9 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  width: 1024px;
+  width: 1200px;
   margin: auto;
-  position: relative;
-  top: -40px; }
+  margin-bottom: 40px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -763,14 +763,16 @@ h1, h2, h3 {
 .h_creations_projet {
   display: inline-block;
   width: 32.2033898305%;
-  vertical-align: top;
-  background: red; }
+  vertical-align: top; }
   .h_creations_projet img, .h_creations_projet h3, .h_creations_projet button {
     display: block;
     margin: auto;
     text-align: center; }
   .h_creations_projet p {
     color: #efeeee; }
+
+.h_immersion {
+  margin-bottom: 30px; }
 
 .h_immersion__etudiant {
   display: inline-block;
@@ -790,13 +792,35 @@ h1, h2, h3 {
   color: #efeeee; }
 
 .h_perspectives__placements {
+  position: relative;
   display: inline-block;
-  width: 32.2033898305%; }
-  .h_perspectives__placements h3, .h_perspectives__placements i, .h_perspectives__placements span {
+  width: 32.2033898305%;
+  /* vertical-align:top; */
+  height: 450px;
+  /* h3 { */
+  /*     position:absolute; */
+  /*     text-align:center; */
+  /*     top:0; */
+  /* } */ }
+  .h_perspectives__placements img {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -65px; }
+  .h_perspectives__placements img[alt="cercle presque complet"] {
+    top: 175px; }
+  .h_perspectives__placements span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -58px; }
+  .h_perspectives__placements i, .h_perspectives__placements span, .h_perspectives__placements img {
     display: block;
-    margin: auto;
+    width: 32.2033898305%;
     color: #efeeee;
     text-align: center; }
+  .h_perspectives__placements span {
+    font-size: 24px; }
 
 .h_main {
   width: 1400px;
@@ -810,18 +834,40 @@ img {
   width: 200px; }
 
 .h_technique {
+  position: relative;
   display: block;
   margin: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  vertical-align: middle; }
-  .h_technique h2 {
-    display: block;
-    margin: auto; }
+  width: 1400px;
+  vertical-align: middle;
+  padding: 0;
+  background: transparent; }
+  .h_technique video {
+    padding: 0;
+    margin: 0;
+    z-index: 1; }
   .h_technique div {
+    position: absolute;
+    width: 1400px;
+    top: 0;
+    height: 737px;
+    background: black;
+    opacity: 0.8;
+    z-index: 2; }
+  .h_technique h2 {
+    position: absolute;
     display: block;
     margin: auto;
-    vertical-align: middle; }
+    font-size: 48px;
+    top: 200px;
+    left: 50%;
+    margin-left: -315px;
+    z-index: 3; }
+  .h_technique a {
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    margin-left: -90px;
+    z-index: 3; }
 
 .h_technique__a {
   padding: 15px;
@@ -952,18 +998,37 @@ button {
   width: 49.1525423729%;
   vertical-align: top;
   padding-top: 50px;
-  margin-top: 50px;
-  padding-top: 50px;
   margin-bottom: 50px; }
-  .h_contact_form label, .h_contact_form input, .h_contact_form textarea, .h_contact_form select, .h_contact_map label, .h_contact_map input, .h_contact_map textarea, .h_contact_map select {
+  .h_contact_form label, .h_contact_form input, .h_contact_form textarea, .h_contact_form select, .h_contact_form span, .h_contact_map label, .h_contact_map input, .h_contact_map textarea, .h_contact_map select, .h_contact_map span {
     display: block;
     width: 65.5172413793%;
-    margin: auto; }
+    margin: auto;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 10px; }
+  .h_contact_form span, .h_contact_map span {
+    padding-top: 2px;
+    font-size: 14px; }
+
+.h_contact_form h3 {
+  padding: 0;
+  margin: 0;
+  margin: auto;
+  text-align: left;
+  width: 65.5172413793%; }
 
 .h_contact_map h3 {
   padding: 0;
   margin: 0;
   text-align: left; }
+.h_contact_map address {
+  padding-top: 10px;
+  font-size: 18px;
+  font-style: normal; }
+
+#google_map {
+  margin-top: 60px;
+  margin-bottom: 60px; }
 
 footer {
   display: block;

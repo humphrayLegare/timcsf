@@ -33,6 +33,19 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
 
+
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1pQ-NkKiRcFzENcymSYj5AAN8YAnQDN0=myMap"></script>
 </body>
 </html>

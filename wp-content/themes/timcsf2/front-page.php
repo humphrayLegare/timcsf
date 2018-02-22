@@ -76,17 +76,27 @@
     
     <div class="h_perspectives__placements">
       <h3>Taux de placements</h3>
-      <i></i>
+
+<!-- logo percent -->
+<img alt="cercle presque complet" src="wp-content/uploads/2018/02/circle_white.png"/>
+      
+
+
       <span><?php the_field('taux_placement'); ?></span>
     </div>
     <div class="h_perspectives__placements">
       <h3>Salaire</h3>
-      <i></i>
+
+      <img alt="etudiant" src="wp-content/uploads/2018/02/low_student_white.png"/>
+
+
       <span><?php the_field('initial_moyen'); ?></span>
     </div>
     <div class="h_perspectives__placements">
       <h3>Salaire haut</h3>
-      <i></i>
+
+      <img alt="etudiant superieur" src="wp-content/uploads/2018/02/high_student_white.png"/>
+
       <span><?php the_field('initial_superieur'); ?></span>
     </div>
     
@@ -135,13 +145,19 @@
 
   <!-- technique -->
   <section class="h_technique">
-      <div>
+    <div>
+      
+    </div>
+<video width="1400" height="737" autoplay="autoplay" loop="loop">
+  <source src="wp-content/uploads/2018/02/videotimcsffinal.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
         <h2>Sinscrire au programme</h2>
 
         <a class="h_technique__a" href="#">Je m'inscris</a>
-      </div>
+      
   </section>
-
+ 
 
   <!-- reseaux sociaux -->
   <section id="h_sociaux" class="h_sociaux">
@@ -176,13 +192,18 @@
 
   <!-- contact -->
   <section id="h_contact" class="h_contact">
+    <h2>Contact</h2>
+
     <div class="h_contact_form">
+      
+      <h3>Joindre un membre de l'équipe</h3>
 
       <label for="nom"><?php the_field('nom'); ?></label>
       <input id="nom" name="nom" type="text" value=""/>
 
       <label for="email"><?php the_field('email'); ?></label>
       <input id="email" name="email" type="text" value=""/>
+      <span>exemple: john@exemple.com</span>
 
       <label for="destinataire"><?php the_field('destinataire'); ?></label>
       <select id="destinataire" name="destinataire">
@@ -205,11 +226,19 @@
 
         <h3>Notre adresse</h3>
       <address>
-          2410 chemin Sainte-Foy,
+          2410 chemin Sainte-Foy,</br>
           Québec
           G1V 1T3
       </address>
-        <img src="<?php the_field('info_img'); ?>" alt="sylvain lamoureux">
+      <iframe id="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.900448001968!2d-71.28922068439772!3d46.78656597913883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb896dea093d777%3A0xf81581457f682cd6!2sC%C3%A9gep+de+Sainte-Foy!5e0!3m2!1sfr!2sca!4v1519314947674" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <img src="<?php the_field('info_img'); ?>" alt="sylvain lamoureux">
+        <p>
+          Coordonnateur</br>
+    SYLVAIN LAMOUREUX</br>
+    tel: (418) 659-6600</br>
+    poste 6662
+
+        </p>
       <p><?php the_field('info'); ?></p>
       
     </div>
