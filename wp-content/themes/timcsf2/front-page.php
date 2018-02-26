@@ -4,59 +4,54 @@
   <?php if( !function_exists('get_field'))  return; ?>
 
 
-  <div class="jumbotron">
+  
 
+    <section class="h_carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="wp-content/uploads/2018/02/projet1-150x150.jpg" alt="First slide">
+    <div class="carousel-caption d-none d-md-block">
+    <h5>Intégration</h5>
+    <p><?php the_field('integration_p'); ?></p>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="wp-content/uploads/2018/02/projet2-150x150.jpg" alt="Second slide">
+    <div class="carousel-caption d-none d-md-block">
+    <h5>Programmation</h5>
+    <p><?php the_field('programmation_p'); ?></p>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <img class="d-block w-100" src="wp-content/uploads/2018/02/projet3-150x150.jpg" alt="Third slide">
+    <div class="carousel-caption d-none d-md-block">
+    <h5>Montage vidéo</h5>
+    <p><?php the_field('videos_p'); ?></p>
+    </div>
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-
-  <div>
-
-  </div>
-
-
-
-
-
-  <!-- creations -->
-  <section id="h_creations" class="h_creations">
-    <h2>Ce que nous créons</h2>
-    <div class="h_creations_projet">
-      <img alt="librairie traces" src="wp-content/uploads/2018/02/prj549_01.jpg"/>
-      <h3>Intégration</h3>
-
-
-      <p><?php the_field('integration_p'); ?></p>
-
-      <button  type="button">Projets</button>
-    </div>
-
-
-    <div class="h_creations_projet">
-      <img alt="librairie traces" src="wp-content/uploads/2018/02/prj549_01.jpg"/>
-      <h3>Programmation</h3>
-      <p>
-        <?php the_field('programmation_p'); ?>
-      </p>
-      <button type="button">Projets</button>
-    </div>
-
-    <div class="h_creations_projet">
-      <img alt="librairie traces" src="wp-content/uploads/2018/02/prj549_01.jpg"/>
-      <h3>Vidéos</h3>
-      <p>
-        <?php the_field('videos_p'); ?>
-
-      </p>
-      <button type="button">Projets</button>
-    </div>
+ </section>
 
 
 
 
-
-
-
-  </section>
+ 
 
   <!-- immersion -->
   <section id="h_immersion" class="h_immersion">

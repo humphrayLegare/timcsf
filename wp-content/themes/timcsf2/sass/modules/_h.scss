@@ -52,6 +52,10 @@ header {
         diplay:inline-block;
     }
 
+    .site-description {
+        
+    }
+
 }
 
 a[rel="home"] {
@@ -94,26 +98,66 @@ h1, h2, h3 {
     padding:40px;
 }
 
+.carousel {
+    postion:absolute;
+    top:30px;
+}
+.h_carousel {
+    background:#262626;
+    height:390px;
+    position:relative;
+    
+}
 
-.h_creations_projet {
-    display:inline-block;
-    width: span(4 of 12);
-    vertical-align:top;
+.carousel-indicators {
+    position:absolute;
+    bottom:-60px;
+}
 
+.carousel-inner {
+    margin-top:20px;
+    width:span(8 of 12);
+    margin:auto;
+    height:300px;
+    
+}
+
+.carousel-item {
+    width:span(6 of 12);
     
 
-    img, h3, button{
-        display:block;
-        margin:auto;
-        text-align:center;
+    div {
+        display:inline-block;
+        width:span(4 of 6);
+        position:absolute;
+        left:120%;
+        top:40px;
+        height:300px;
+        
+
+        h5 {
+            /* position:absolute; */
+            top:0px;
+            left:-30px;
+            @include font-size(1.5);
+            font-weight:bold;
+            
+        }
+
+        p {
+            /* position:absolute; */
+            top:0px;
+            @include font-size(1);
+            left:-30px;
+        }
     }
-
-    p {
-        color: $h_color_text--white;
-    }
-
-
+    
 }
+
+
+
+
+
 
 
 //section immersion

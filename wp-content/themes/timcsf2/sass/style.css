@@ -782,16 +782,47 @@ h1, h2, h3 {
 .h_creations, .h_immersion, .h_perspectives, .h_temoignages, .h_technique {
   padding: 40px; }
 
-.h_creations_projet {
-  display: inline-block;
-  width: 32.2033898305%;
-  vertical-align: top; }
-  .h_creations_projet img, .h_creations_projet h3, .h_creations_projet button {
-    display: block;
-    margin: auto;
-    text-align: center; }
-  .h_creations_projet p {
-    color: #efeeee; }
+.carousel {
+  postion: absolute;
+  top: 30px; }
+
+.h_carousel {
+  background: #262626;
+  height: 390px;
+  position: relative; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: -60px; }
+
+.carousel-inner {
+  margin-top: 20px;
+  width: 66.1016949153%;
+  margin: auto;
+  height: 300px; }
+
+.carousel-item {
+  width: 49.1525423729%; }
+  .carousel-item div {
+    display: inline-block;
+    width: 65.5172413793%;
+    position: absolute;
+    left: 120%;
+    top: 40px;
+    height: 300px; }
+    .carousel-item div h5 {
+      /* position:absolute; */
+      top: 0px;
+      left: -30px;
+      font-size: 24px;
+      font-size: 1.5rem;
+      font-weight: bold; }
+    .carousel-item div p {
+      /* position:absolute; */
+      top: 0px;
+      font-size: 16px;
+      font-size: 1rem;
+      left: -30px; }
 
 .h_immersion {
   margin-bottom: 30px; }
