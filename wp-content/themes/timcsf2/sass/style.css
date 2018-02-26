@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+@import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -239,13 +240,16 @@ h1:nth-child(1) {
   text-align: left; }
 
 h1 {
-  font-size: 46px; }
+  font-size: 64px;
+  font-size: 4rem; }
 
 h2 {
-  font-size: 32px; }
+  font-size: 48px;
+  font-size: 3rem; }
 
 h3 {
-  font-size: 20px; }
+  font-size: 32px;
+  font-size: 2rem; }
 
 section:nth-child(even) h1, section:nth-child(even) h2, section:nth-child(even) h3 {
   color: #604a8e; }
@@ -447,15 +451,18 @@ a {
   a:hover, a:active {
     outline: 0; }
 
+a[rel="home"]:hover {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
   clear: both;
   display: block;
-  width: 1200px;
+  width: 1400px;
   margin: auto;
-  margin-bottom: 40px; }
+  margin-bottom: 80px; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -727,16 +734,31 @@ object {
 /* .grid { */
 /*     background: susy-svg-grid() no-repeat scroll; */
 /* } */
+body {
+  line-height: 24px; }
+
 header {
   width: 1400px;
   background: white;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 40px; }
   header .logoCegep {
     display: inline-block;
     float: right;
     position: relative;
-    top: -80px;
-    width: 15.2542372881%; }
+    width: 6.7796610169%; }
+  header .site-title {
+    margin-bottom: 0; }
+  header .site-branding {
+    float: left;
+    diplay: inline-block; }
+
+a[rel="home"] {
+  font-size: 48px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #604a8e !important; }
 
 h1 {
   display: inline-block;
@@ -784,6 +806,10 @@ h1, h2, h3 {
     margin: auto;
     width: 200px;
     height: 200px; }
+  .h_immersion__etudiant span a {
+    font-size: 20.8px;
+    font-size: 1.3rem;
+    color: blue; }
 
 .h_perspectives p {
   margin: auto;
@@ -860,13 +886,13 @@ img {
     font-size: 48px;
     top: 200px;
     left: 50%;
-    margin-left: -315px;
+    margin-left: -295px;
     z-index: 3; }
   .h_technique a {
     position: absolute;
     top: 360px;
     left: 50%;
-    margin-left: -90px;
+    margin-left: -100px;
     z-index: 3; }
 
 .h_technique__a {
@@ -977,7 +1003,12 @@ button {
   .h_facebook__top div:nth-child(even) .sociaux_span--facebook, .h_twitter__top div:nth-child(even) .sociaux_span--facebook {
     color: #3b5998; }
   .h_facebook__top div:nth-child(even) .sociaux_span--twitter, .h_twitter__top div:nth-child(even) .sociaux_span--twitter {
-    color: #00aced; }
+    color: #00aced;
+    position: relative;
+    right: -20px;
+    top: 3px;
+    font-size: 19.2px;
+    font-size: 1.2rem; }
 
 .sociaux_logo {
   width: 21.0526315789%;
@@ -987,6 +1018,9 @@ button {
   width: 73.6842105263%;
   vertical-align: middle; }
 
+/* h3 { */
+/*     @include font-size(2); */
+/* } */
 .h_contact, .h_contact_map {
   color: #efeeee; }
   .h_contact label, .h_contact input, .h_contact_map label, .h_contact_map input {
@@ -1010,18 +1044,24 @@ button {
     padding-top: 2px;
     font-size: 14px; }
 
+.h_contact_form form {
+  margin-top: 20px; }
 .h_contact_form h3 {
   padding: 0;
   margin: 0;
   margin: auto;
   text-align: left;
   width: 65.5172413793%; }
+.h_contact_form label {
+  font-weight: bold; }
 
 .h_contact_map h3 {
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
   text-align: left; }
-.h_contact_map address {
+.h_contact_map address, .h_contact_map p {
+  margin-top: 20px;
   padding-top: 10px;
   font-size: 18px;
   font-style: normal; }
@@ -1030,11 +1070,12 @@ button {
   margin-top: 60px;
   margin-bottom: 60px; }
 
-footer {
-  display: block;
-  margin: auto;
-  text-align: center;
-  font-size: 18px;
-  padding: 50px; }
+/* footer { */
+/*     display:block; */
+/*     margin:auto; */
+/*     text-align: center; */
+/*     font-size: 18px; */
+/*     padding:50px; */
+/* } */
 
 /*# sourceMappingURL=style.css.map */

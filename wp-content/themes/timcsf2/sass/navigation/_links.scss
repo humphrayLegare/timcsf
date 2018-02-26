@@ -18,3 +18,10 @@ a {
 		outline: 0;
 	}
 }
+
+
+a[rel="home"] {
+    &:hover {
+        text-decoration:none;
+    }
+}

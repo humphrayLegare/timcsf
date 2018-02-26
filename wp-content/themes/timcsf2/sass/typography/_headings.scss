@@ -10,17 +10,18 @@ h1:nth-child(1){
 
 
 h1 {
-    font-size:46px;
-    
+    @include font-size(4);
+
 }
 
 h2 {
-    font-size:32px;
+    @include font-size(3);
 
 }
 
 h3 {
-    font-size:20px;
+    
+    @include font-size(2);
 }
 
 

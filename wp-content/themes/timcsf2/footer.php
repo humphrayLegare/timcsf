@@ -47,5 +47,6 @@ var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1pQ-NkKiRcFzENcymSYj5AAN8YAnQDN0=myMap"></script>
+
 </body>
 </html>

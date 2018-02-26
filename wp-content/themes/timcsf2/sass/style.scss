@@ -45,6 +45,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
 
+
+
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -110,7 +112,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
-
+//bootstrap
+@import "../bower_components/bootstrap/dist/css/bootstrap.min.css";
 
 /*--------------------------------------------------------------
 # h
