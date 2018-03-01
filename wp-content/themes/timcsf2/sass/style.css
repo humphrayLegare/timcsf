@@ -460,7 +460,7 @@ a[rel="home"]:hover {
 .main-navigation {
   clear: both;
   display: block;
-  width: 1400px;
+  width: 1200px;
   margin: auto;
   margin-bottom: 80px; }
   .main-navigation ul {
@@ -738,7 +738,7 @@ body {
   line-height: 24px; }
 
 header {
-  width: 1400px;
+  width: 1200px;
   background: white;
   margin: auto;
   margin-bottom: 40px; }
@@ -787,7 +787,7 @@ h1, h2, h3 {
   top: 30px; }
 
 .h_carousel {
-  background: #262626;
+  background: #604a8e;
   height: 390px;
   position: relative; }
 
@@ -796,7 +796,6 @@ h1, h2, h3 {
   bottom: -60px; }
 
 .carousel-inner {
-  margin-top: 20px;
   width: 66.1016949153%;
   margin: auto;
   height: 300px; }
@@ -811,18 +810,56 @@ h1, h2, h3 {
     top: 40px;
     height: 300px; }
     .carousel-item div h5 {
-      /* position:absolute; */
-      top: 0px;
+      position: absolute;
+      top: -20px;
       left: -30px;
-      font-size: 24px;
-      font-size: 1.5rem;
-      font-weight: bold; }
+      font-size: 32px;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: left; }
     .carousel-item div p {
-      /* position:absolute; */
-      top: 0px;
+      position: absolute;
+      top: 20px;
       font-size: 16px;
       font-size: 1rem;
-      left: -30px; }
+      left: -30px;
+      text-align: left; }
+
+.h_projects_area #h_projects_area__btn-group {
+  width: 74.5762711864% !important;
+  margin: auto !important;
+  display: block; }
+  .h_projects_area #h_projects_area__btn-group button {
+    width: 31.8181818182%;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bold; }
+.h_projects_area__ol {
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  width: 74.5762711864%; }
+  .h_projects_area__ol li {
+    display: inline-block;
+    width: 31.8181818182%;
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center; }
+.h_projects_area__screen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 600px; }
+  .h_projects_area__screen img {
+    display: inline-block;
+    width: 380px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px; }
 
 .h_immersion {
   margin-bottom: 30px; }
@@ -880,7 +917,7 @@ h1, h2, h3 {
     font-size: 24px; }
 
 .h_main {
-  width: 1400px;
+  width: 1200px;
   display: block;
   margin: auto; }
 
@@ -894,19 +931,21 @@ img {
   position: relative;
   display: block;
   margin: auto;
-  width: 1400px;
+  width: 1200px;
   vertical-align: middle;
   padding: 0;
   background: transparent; }
   .h_technique video {
     padding: 0;
     margin: 0;
-    z-index: 1; }
+    z-index: 1;
+    width: 1200px;
+    height: 631px; }
   .h_technique div {
     position: absolute;
-    width: 1400px;
+    width: 1200px;
     top: 0;
-    height: 737px;
+    height: 631px;
     background: black;
     opacity: 0.8;
     z-index: 2; }
@@ -1064,16 +1103,23 @@ button {
   vertical-align: top;
   padding-top: 50px;
   margin-bottom: 50px; }
-  .h_contact_form label, .h_contact_form input, .h_contact_form textarea, .h_contact_form select, .h_contact_form span, .h_contact_map label, .h_contact_map input, .h_contact_map textarea, .h_contact_map select, .h_contact_map span {
+  .h_contact_form label, .h_contact_form input, .h_contact_form textarea, .h_contact_form select, .h_contact_form span, .h_contact_form .g-recaptcha, .h_contact_form button[name="submit"], .h_contact_form .rc-anchor-error-message, .h_contact_map label, .h_contact_map input, .h_contact_map textarea, .h_contact_map select, .h_contact_map span, .h_contact_map .g-recaptcha, .h_contact_map button[name="submit"], .h_contact_map .rc-anchor-error-message {
     display: block;
     width: 65.5172413793%;
     margin: auto;
     font-size: 18px;
     padding-bottom: 5px;
     padding-top: 10px; }
+  .h_contact_form button[name="submit"], .h_contact_map button[name="submit"] {
+    height: 50px;
+    vertical-align: middle; }
+  .h_contact_form input, .h_contact_form textarea, .h_contact_form .g-recaptcha, .h_contact_form select, .h_contact_map input, .h_contact_map textarea, .h_contact_map .g-recaptcha, .h_contact_map select {
+    margin-bottom: 10px; }
   .h_contact_form span, .h_contact_map span {
     padding-top: 2px;
-    font-size: 14px; }
+    font-size: 14px;
+    position: relative;
+    top: -10px; }
 
 .h_contact_form form {
   margin-top: 20px; }
@@ -1099,7 +1145,8 @@ button {
 
 #google_map {
   margin-top: 60px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  width: 82.7586206897%; }
 
 /* footer { */
 /*     display:block; */

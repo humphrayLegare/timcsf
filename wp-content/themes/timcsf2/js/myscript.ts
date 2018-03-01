@@ -1,18 +1,38 @@
-$(document).ready(function () {
-    var targetName = "integration";
-    var self = this;
-    $(".area").on("click", function ($e) {
+$(document).ready(function() {
+
+    let targetName = "integration";
+    let self = this;
+
+    $(".area").on("click", function($e) {
         targetName = $(this).data("name");
         changePictures(targetName);
+
     });
+
+
     //change the pictures
     function changePictures(targetName) {
-        var dir = "wp-content/uploads/" + targetName + "/prj";
+        let dir = `wp-content/uploads/${targetName}/prj`;
         console.log(dir);
-        for (var i = 1; i <= 6; i++) {
-            $(".h_projects_area__screen").append("\n<a href='" + dir + i + ".jpg' data-toggle=\"lightbox\" data-width=\"800\"><img class=\"myImg\" src='" + dir + i + ".jpg' alt=\"" + targetName + "\"/></a>\n\n\n\n");
+
+        for (let i = 1; i <= 6; i++) {
+            $(".h_projects_area__screen").append(`
+<a href='${dir}${i}.jpg' data-toggle="lightbox" data-width="800"><img class="myImg" src='${dir}${i}.jpg' alt="${targetName}"/></a>
+
+
+
+`);
         }
+
+
+
+
     }
+
+
+
+
+
     // let dir = "wp-content/uploads/02/";
     // let fileextension = ".jpg";
     // $.ajax({
@@ -26,4 +46,14 @@ $(document).ready(function () {
     //         });
     //     }
     // });
+
+
+
+
+
+
+
+
+
+
 });

@@ -15,21 +15,21 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="wp-content/uploads/2018/02/projet1-150x150.jpg" alt="First slide">
+      <img class="d-block w-100" src="wp-content/uploads/2018/02/html.jpg" alt="First slide">
     <div class="carousel-caption d-none d-md-block">
     <h5>Intégration</h5>
     <p><?php the_field('integration_p'); ?></p>
     </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="wp-content/uploads/2018/02/projet2-150x150.jpg" alt="Second slide">
+      <img class="d-block w-100" src="wp-content/uploads/2018/02/integration.jpg" alt="Second slide">
     <div class="carousel-caption d-none d-md-block">
     <h5>Programmation</h5>
     <p><?php the_field('programmation_p'); ?></p>
     </div>
     </div>
     <div class="carousel-item">
-    <img class="d-block w-100" src="wp-content/uploads/2018/02/projet3-150x150.jpg" alt="Third slide">
+    <img class="d-block w-100" src="wp-content/uploads/2018/02/video.jpg" alt="Third slide">
     <div class="carousel-caption d-none d-md-block">
     <h5>Montage vidéo</h5>
     <p><?php the_field('videos_p'); ?></p>
@@ -46,9 +46,34 @@
   </a>
 </div>
 
- </section>
+    </section>
 
 
+    <section class="h_projects_area">
+      <h2>Quelques projets réalisés pas nos étudiants</h2>
+      
+<div id="h_projects_area__btn-group" class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary area" data-name="integration">Intégration</button>
+  <button type="button" class="btn btn-secondary area" data-name="programmation">Programmation</button>
+  <button type="button" class="btn btn-secondary area" data-name="videos">Vidéos</button>
+</div>
+
+
+
+      <div class="h_projects_area__screen">
+
+
+
+  
+      </div>
+
+
+    </section>
+
+
+    <!-- saving time -->
+    <section> 
+    </section>
 
 
  
@@ -228,6 +253,8 @@
 
         <label for="message"><?php the_field('message'); ?></label>
         <textarea id="message" name="message" value="" rows="10" cols="10"></textarea>
+<div class="g-recaptcha" data-sitekey="6LcFu0gUAAAAAFMn7qPo8H4gxAoCT03h7d332CRS"></div>
+<button type="submit" name="submit">Envoyer</button>
       </form>
 
     </div>

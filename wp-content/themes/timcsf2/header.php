@@ -22,6 +22,9 @@
 	  <?php wp_head(); ?>
     <script src="wp-content/themes/timcsf2/js/myscript.js" type="text/javascript"></script>
     <script src="wp-content/themes/timcsf2/bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+    <script src="wp-content/themes/timcsf2/bower_components/ekko-lightbox/dist/ekko-lightbox.js" type="text/javascript"></script>
+    <script src="wp-content/themes/timcsf2/js/overlay.js" type="text/javascript"></script>
+   <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 </head>
 
 <body <?php body_class(); ?>>
