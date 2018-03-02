@@ -45,6 +45,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 @import url(../bower_components/bootstrap/dist/css/bootstrap.min.css);
+@import url(animate.css/animate.min.css);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
