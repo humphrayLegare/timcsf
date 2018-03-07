@@ -26,7 +26,7 @@
 
     <script src="wp-content/themes/timcsf2/bower_components/ekko-lightbox/dist/ekko-lightbox.js" type="text/javascript"></script>
     <script src="wp-content/themes/timcsf2/js/overlay.js" type="text/javascript"></script>
-   <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+   <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -66,7 +66,7 @@
 			<?php
 			endif; ?>
 
- <img class="logoCegep" src="wp-content/uploads/2018/02/logoCegep400black.png" alt="logo cegep" />
+ <a href="http://www.cegep-ste-foy.qc.ca"><img class="logoCegep" src="wp-content/uploads/2018/02/logoCegep400black.png" alt="logo cegep" /></a>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">

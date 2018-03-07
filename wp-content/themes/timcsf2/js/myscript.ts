@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 
     function removePictures() {
-        $(".h_projects_area__screen img").remove();
+        $(".h_projects_area__screen a").remove();
 
     }
 

@@ -198,6 +198,8 @@
 
 
 
+    <?php echo do_shortcode('[custom-facebook-feed num=3 type=events layout=half]') ?>
+
 
     <div class="h_twitter__top">
       <div>
@@ -227,35 +229,19 @@
   <section id="h_contact" class="h_contact">
     <h2>Contact</h2>
 
+    
+
     <div class="h_contact_form">
 
-      <h3>Joindre un membre de l'équipe</h3>
-      <form action="">
+<h3>Joindre un membre de l'équipe</h3>
+<?php
+
+echo do_shortcode( '[contact-form-7 id="52" title="Contact form 1"]' );
 
 
-        <label for="nom"><?php the_field('nom'); ?></label>
-        <input id="nom" name="nom" type="text" value=""/>
+    ?>
 
-        <label for="email"><?php the_field('email'); ?></label>
-        <input id="email" name="email" type="text" value=""/>
-        <span>exemple: john@exemple.com</span>
 
-        <label for="destinataire"><?php the_field('destinataire'); ?></label>
-        <select id="destinataire" name="destinataire">
-          <option value="">Sylvain Lamoureux</option>
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-
-        <label for="sujet"><?php the_field('sujet'); ?></label>
-        <input id="sujet" name="sujet" type="text" value="">
-
-        <label for="message"><?php the_field('message'); ?></label>
-        <textarea id="message" name="message" value="" rows="10" cols="10"></textarea>
-<div class="g-recaptcha" data-sitekey="6LcFu0gUAAAAAFMn7qPo8H4gxAoCT03h7d332CRS"></div>
-<button type="submit" name="submit">Envoyer</button>
-      </form>
 
     </div>
 
@@ -286,7 +272,7 @@
 
   </section>
 
-
+  
 
 </main>
 

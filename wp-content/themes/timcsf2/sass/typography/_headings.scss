@@ -24,10 +24,20 @@ h3 {
     @include font-size(2);
 }
 
+@media (min-width:601px){
+
 
 section:nth-child(even) h1,section:nth-child(even) h2, section:nth-child(even) h3 {
     color:$h_color_main;
 }
 section:nth-child(odd) h1,section:nth-child(odd) h2, section:nth-child(odd) h3 {
     color:#efeeee;
+}
+}
+
+
+@media (max-width:600px) {
+    h2, h3 {
+        color:$h_color_main;
+    }
 }
