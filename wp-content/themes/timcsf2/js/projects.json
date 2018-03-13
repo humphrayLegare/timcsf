@@ -1,9 +1,30 @@
 {
     "integration": {
-        "project1" : "wp-content/uploads/integration/projet1.jpg",
-        "project2" : "wp-content/uploads/integration/projet2.jpg",
-        "project3" : "wp-content/uploads/integration/projet3.jpg",
-        "project4" : "wp-content/uploads/integration/projet4.jpg"
+        "1" : {
+            "src": "prj1.jpg",
+            "alt": "projet 1"
+        },
+        "2" : {
+            "src": "prj2.jpg",
+            "alt": "projet 2"
+        },
+        "3" : {
+            "src": "prj3.jpg",
+            "alt": "projet 3"
+        },
+        "4" : {
+            "src": "prj1.jpg",
+            "alt": "projet 4"
+        },
+        "5" : {
+            "src": "prj1.jpg",
+            "alt": "projet 5"
+        },
+        "6" : {
+            "src": "prj1.jpg",
+            "alt": "projet 6"
+        }
+        
         
 
 

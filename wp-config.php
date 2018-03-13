@@ -38,7 +38,7 @@ define('DB_CHARSET', 'utf8mb4');
 define('DB_COLLATE', '');
 
 
-//for timunix2
+// //for timunix2
 // define('DB_NAME', '2015_hlegareBD');
 
 // /** MySQL database username */

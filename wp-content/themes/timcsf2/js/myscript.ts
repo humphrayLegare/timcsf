@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
     changePictures("integration");
 
     let targetName = "integration";
@@ -20,20 +22,18 @@ $(document).ready(function() {
         console.log(dir);
 
         for (let i = 1; i <= 6; i++) {
-            var animations = ["fadeInLeft", "fadeInRight"];
-            var theAnimation = "";
-            if ((i % 2) == 0) {
-                theAnimation = animations[1];
-            } else {
-                theAnimation = animations[0];
-            }
+            var animations = ["fadeIn", "fadeInDown", "fadeInLeft", "fadeInRight"];
+            var intRan = Math.floor(Math.random() * Math.floor(3));
+            var theAnimation = animations[intRan];
 
-            $(".h_projects_area__screen").append(`
-<a href='${dir}${i}.jpg' data-toggle="lightbox" data-width="800"><img class="myImg" src='${dir}${i}.jpg' alt="${targetName}"/></a>
+
+            $(".h_projects_area__screen").append(`<a href='${dir}${i}.jpg'
+data-toggle="lightbox" data-width="800"><img class="myImg animated ${theAnimation}" src='${dir}${i}.jpg'
+alt="${targetName} projet ${i}"/></a>
 
 
 
-`).addClass(`animated ${theAnimation}`);
+`);
         }
 
 
@@ -47,6 +47,12 @@ $(document).ready(function() {
         $(".h_projects_area__screen a").remove();
 
     }
+
+
+
+
+
+
 
 
 

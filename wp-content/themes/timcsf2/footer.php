@@ -26,7 +26,7 @@
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'timcsf' ), 'timcsf', '<a href="http://underscores.me/">humphray legare</a>' );
+    printf( esc_html__( 'Theme: %1$s by %2$s.', 'timcsf' ), 'timcsf', '<a href="http://underscores.me/">Humphray Légaré &copy; Tous droits réservés</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

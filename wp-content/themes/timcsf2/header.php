@@ -66,11 +66,11 @@
 			<?php
 			endif; ?>
 
- <a href="http://www.cegep-ste-foy.qc.ca"><img class="logoCegep" src="wp-content/uploads/2018/02/logoCegep400black.png" alt="logo cegep" /></a>
+ <a class="logoCegepLink" href="http://www.cegep-ste-foy.qc.ca"><img class="logoCegep" src="wp-content/uploads/2018/02/logoCegep400black.png" alt="logo cegep" /></a>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'timcsf' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'timcsf' ); ?></button>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',

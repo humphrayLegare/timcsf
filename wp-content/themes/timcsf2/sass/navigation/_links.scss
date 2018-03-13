@@ -1,5 +1,5 @@
 a {
-	  color: black;
+	  color: $h_color_button;
     font-size:24px;
 
 	&:visited {
@@ -17,6 +17,12 @@ a {
 	&:active {
 		outline: 0;
 	}
+}
+
+.site-info {
+    a{
+        @include font-size(1);
+    }
 }
 
 

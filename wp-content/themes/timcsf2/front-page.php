@@ -3,10 +3,8 @@
 <main class="h_main grid">
   <?php if( !function_exists('get_field'))  return; ?>
 
-
-  
-
     <section class="h_carousel">
+    <img class="the_background" alt="ordinateur" src="wp-content/uploads/2018/02/carousel.jpg"/>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -15,21 +13,21 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="wp-content/uploads/2018/02/html.jpg" alt="First slide">
+      <img class="d-block w-100" src="wp-content/uploads/2018/02/html.png" alt="First slide">
     <div class="carousel-caption d-none d-md-block">
     <h5>Intégration</h5>
     <p><?php the_field('integration_p'); ?></p>
     </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="wp-content/uploads/2018/02/integration.jpg" alt="Second slide">
+      <img class="d-block w-100" src="wp-content/uploads/2018/02/integration.png" alt="Second slide">
     <div class="carousel-caption d-none d-md-block">
     <h5>Programmation</h5>
     <p><?php the_field('programmation_p'); ?></p>
     </div>
     </div>
     <div class="carousel-item">
-    <img class="d-block w-100" src="wp-content/uploads/2018/02/video.jpg" alt="Third slide">
+    <img class="d-block w-100" src="wp-content/uploads/2018/02/video.png" alt="Third slide">
     <div class="carousel-caption d-none d-md-block">
     <h5>Montage vidéo</h5>
     <p><?php the_field('videos_p'); ?></p>
@@ -49,7 +47,7 @@
     </section>
 
 
-    <section class="h_projects_area">
+    <section id="h_creations" class="h_projects_area">
       <h2>Quelques projets réalisés pas nos étudiants</h2>
       
 <div id="h_projects_area__btn-group" class="btn-group" role="group" aria-label="Basic example">
@@ -126,7 +124,7 @@
       <span><?php the_field('initial_moyen'); ?></span>
     </div>
     <div class="h_perspectives__placements">
-      <h3>Salaire haut</h3>
+      <h3>Salaire supérieur</h3>
 
       <img alt="etudiant superieur" src="wp-content/uploads/2018/02/high_student_white.png"/>
 
@@ -187,7 +185,7 @@
     </video>
     <h2>S'inscrire au programme</h2>
 
-    <a class="h_technique__a" href="#">Je m'inscris</a>
+    <a class="h_technique__a" href="https://www.sracq.qc.ca/">Je m'inscris</a>
 
   </section>
 
@@ -195,6 +193,19 @@
   <!-- reseaux sociaux -->
   <section id="h_sociaux" class="h_sociaux">
     <h2>La Tim sur les réseaux sociaux</h2>
+
+    <div class="h_facebook__top">
+      <div>
+        <hr/>
+      </div>
+      <div>
+        <img class="sociaux_logo" src="wp-content/uploads/2018/02/facebook.png" alt="facebook logo" />
+        <span class="sociaux_span--facebook">Facebook</span>
+      </div>
+      <div>
+        <hr/>
+      </div>
+    </div>
 
 
 
@@ -279,4 +290,4 @@ echo do_shortcode( '[contact-form-7 id="52" title="Contact form 1"]' );
 
 
 
-<?php //get_footer(); ?>
+<?php get_footer(); ?>
